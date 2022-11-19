@@ -79,18 +79,24 @@
 					class="octicon octicon-link"></span></a><span>&#9672;</span> Evaluation of Pre-training Knowledge
 		</h2>
 
-		<p style="text-align: justify;"> To examine how pre-training affects knowledgebased reasoning for tabular data, we focus on two types of knowledge,</p>
+		<p style="text-align: justify;"> To examine how pre-training affects knowledgebased reasoning for tabular data,
+			we focus on two types of knowledge,</p>
 
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Factual Knowledge</h3>
-		<p style="text-align: justify;"> Factual knowledge is the awareness of specific factual knowledge about entities.</p>
-		<p style="text-align: center"> <span style="color: green;">Example:</span> &lt;mask&gt; is a pop album with a duration less than 50 min.</p>
-		<p style="text-align: center"> &lt;mask&gt; = Breakfast in America <span>&#10145;</span> Factual knowledge (from H1)</p>
+		<p style="text-align: justify;"> Factual knowledge is the awareness of specific factual knowledge about
+			entities.</p>
+		<p style="text-align: center"> <span style="color: green;">Example:</span> &lt;mask&gt; is a pop album with a
+			duration less than 50 min.</p>
+		<p style="text-align: center"> &lt;mask&gt; = Breakfast in America <span>&#10145;</span> Factual knowledge (from
+			H1)</p>
 
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Relational Knowledge</h3>
-		<p style="text-align: justify;"> Relational knowledge is the awareness of possible right relations between two distinct entities.</p>
-		<p style="text-align: center"> <span style="color: green;">Example:</span> Breakfast in America was &lt;mask&gt; towards the end of
+		<p style="text-align: justify;"> Relational knowledge is the awareness of possible right relations between two
+			distinct entities.</p>
+		<p style="text-align: center"> <span style="color: green;">Example:</span> Breakfast in America was &lt;mask&gt;
+			towards the end of
 			1979.</p>
 		<p style="text-align: center"> &lt;mask&gt; = released <span>&#10145;</span> Relational knowledge (from H3)</p>
 
@@ -99,28 +105,34 @@
 
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
-				class="octicon octicon-link"></span></a><span>&#9672;</span> Enhancing Tabular Reasoning
+					class="octicon octicon-link"></span></a><span>&#9672;</span> Enhancing Tabular Reasoning
 		</h2>
-		<p style="text-align: justify;">Utilizing ADAPET, the tabular NLI task is reconstructed as cloze-style questions.</p>
+		<p style="text-align: justify;">Utilizing ADAPET, the tabular NLI task is reconstructed as cloze-style
+			questions.</p>
 
 		<p style="text-align: center"> &lt;premise&gt; ? &lt;mask&gt; &lt;hypothesis&gt; </p>
 
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
-			class="octicon octicon-link"></span></a>Label Loss</h3>
+					class="octicon octicon-link"></span></a>Label Loss</h3>
 		<p style="text-align: justify;"><i>"What is the most suitable label
-			given the input?"</i> i.e., The model is tasked with
+				given the input?"</i> i.e., The model is tasked with
 			predicting the masked vocabulary word.</p>
-			<img src="figures/ADAPET DLL.png" style="max-width:95%;">
+		<img src="figures/ADAPET DLL.png" style="object-fit:contains;max-width:70%;">
 
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
-				class="octicon octicon-link"></span></a>Label Conditioning</h3>
-			<p style="text-align: justify;"><i>"Given the correct inference label, what is the appropriate, relevant context?"</i> i.e., Predicting the randomly-mask token from vocabulary given its label.</p>
-			<img src="figures/ADAPET LC.png" style="max-width:95%;">
-		
+					class="octicon octicon-link"></span></a>Label Conditioning</h3>
+		<p style="text-align: justify;"><i>"Given the correct inference label, what is the appropriate, relevant
+				context?"</i> i.e., Predicting the randomly-mask token from vocabulary given its label.</p>
+		<img src="figures/ADAPET LC.png" style="object-fit:contains;max-width:70%;">
+
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
-				class="octicon octicon-link"></span></a><span>&#9672;</span> Enhancing Tabular Reasoning
+					class="octicon octicon-link"></span></a><span>&#9672;</span> Robustness To Perturbations
 		</h2>
-				
+		<p style="text-align: justify;">We employ a variety of character and word-level perturbations to hypotheses to
+			mimic inputs that differ somewhat from training examples distributions.</p>
+		<figure><img src="figures/perturb_examples.png" style="object-fit:contains;max-width:95%;"></figure>
+		
+
 
 
 		<!-- <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
@@ -132,7 +144,12 @@
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Conclusion</h2>
-		<p style="text-align: justify;"> In this work, we have validated the effects of <i>factual</i> and <i>relational knowledge</i> in the language model via prompts for tabular reasoning. Through <i>prompt based learning</i>, we extracted knowledge from semi-structured tables and further improved the model's reasoning capabilities. Our intensive experiments on the InfoTabS demonstrate that our approach can <b>conserve knowledge and enhance tabular NLI performance</b>. The conclusions hold up well when tested against carefully crafted adversarial test sets based on character and word-level perturbations.</p> 
+		<p style="text-align: justify;"> In this work, we have validated the effects of <i>factual</i> and <i>relational
+				knowledge</i> in the language model via prompts for tabular reasoning. Through <i>prompt based
+				learning</i>, we extracted knowledge from semi-structured tables and further improved the model's
+			reasoning capabilities. Our intensive experiments on the InfoTabS demonstrate that our approach can
+			<b>conserve knowledge and enhance tabular NLI performance</b>. The conclusions hold up well when tested
+			against carefully crafted adversarial test sets based on character and word-level perturbations.</p>
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>People</h2>
