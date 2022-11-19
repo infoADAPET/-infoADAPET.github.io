@@ -10,19 +10,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/cayman.css">
 	<style>
-        figure {
-            display: inline-block;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            margin-left: 40px;
-            margin-right: 40px;
-        }
-    </style>
+		figure {
+			display: inline-block;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+	</style>
 </head>
 
 <body>
 	<section class="page-header">
-		<h1><img src="figures/logo.png" style="max-width:50%;"></h1>
+		<!-- <h1><img src="figures/logo.png" style="max-width:50%;"></h1> -->
+		<h1 class="project-name">Enhancing Tabular Reasoning with Pattern Exploiting Training</h1>
 		<a href="https://vgupta123.github.io/docs/pettable.pdf" class="btn">Paper</a>
 		<a href="https://github.com/abhilashreddys/infoADAPET" class="btn">Code</a>
 		<!-- <a href="https://screencast-o-matic.com/watch/crhlnpVfYcG" class="btn">Video</a> -->
@@ -32,7 +33,7 @@
 		<a href="https://infotabs.github.io/" class="btn">InfoTabS</a>
 	</section>
 	<section class="main-content">
-		<h1>Enhancing Tabular Reasoning with Pattern Exploiting Training</h1>
+		<!-- <h1>Enhancing Tabular Reasoning with Pattern Exploiting Training</h1> -->
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>About</h2>
 		<p style="text-align: justify;"> Recent methods based on pre-trained language models have exhibited superior
@@ -56,7 +57,8 @@
 				style="color: red">contradiction</span>), or undetermined (<span style="color: blue">neutral</span>,
 			i.e. tabular natural language inference. Below is an example from the <a href="infotabs.github.io">INFOTABS
 			</a>dataset:</p>
-		<p style="margin-left:10%; margin-right:10%;"><img src="figures/ex_main_v2.png" style="max-width:95%;" class="center"></p>
+		<p style="margin-left:10%; margin-right:10%;"><img src="figures/ex_main_v2.png" style="max-width:95%;"
+				class="center"></p>
 		<p> Here, <b>H1</b> is <span style="color: darkgreen">entailed</span>, <b>H2</b> is <span
 				style="color: blue">neutral</span> and <b>H3</b> is <span style="color: red">contradiction</span> </p>
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
@@ -126,7 +128,7 @@
 		<p style="text-align: justify;"><i>"What is the most suitable label
 				given the input?"</i> i.e., The model is tasked with
 			predicting the masked vocabulary word.</p>
-			<figure> <img src="figures/ADAPET DLL.png" style="object-fit:contains;max-width:85%;" class="center"></figure>
+		<figure> <img src="figures/ADAPET DLL.png" style="object-fit:contains;max-width:85%;" class="center"></figure>
 
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Label Conditioning</h3>
@@ -140,7 +142,7 @@
 		<p style="text-align: justify;">We employ a variety of character and word-level perturbations to hypotheses to
 			mimic inputs that differ somewhat from training examples distributions.</p>
 		<img src="figures/perturb_examples.png" style="object-fit:contains;max-width:95%;"></figure>
-		
+
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Experimental Results</h2>
@@ -163,12 +165,15 @@
 			</div>
 		  </div> -->
 		<figure>
-			<img src="figures/Factual Knowledge Evaluation.png" style="object-fit:contains;max-width:95%;" class="center">
-			<img src="figures/Relational Knowledge Evaluation.png" style="object-fit:contains;max-width:95%;" class="center">
+			<img src="figures/Factual Knowledge Evaluation.png" style="object-fit:contains;max-width:95%;"
+				class="center">
+			<img src="figures/Relational Knowledge Evaluation.png" style="object-fit:contains;max-width:95%;"
+				class="center">
 		</figure>
 		<figure>
 			<img src="figures/Reasoning on InfoTabS DRR8.png" style="object-fit:contains;max-width:95%;" class="center">
-			<img src="figures/Robustness to Input perturbations_v2.png" style="object-fit:contains;max-width:95%;" class="center">
+			<img src="figures/Robustness to Input perturbations_v2.png" style="object-fit:contains;max-width:95%;"
+				class="center">
 		</figure>
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
@@ -178,7 +183,8 @@
 				learning</i>, we extracted knowledge from semi-structured tables and further improved the model's
 			reasoning capabilities. Our intensive experiments on the InfoTabS demonstrate that our approach can
 			<b>conserve knowledge and enhance tabular NLI performance</b>. The conclusions hold up well when tested
-			against carefully crafted adversarial test sets based on character and word-level perturbations.</p>
+			against carefully crafted adversarial test sets based on character and word-level perturbations.
+		</p>
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>People</h2>
@@ -215,7 +221,10 @@
 		<p style="text-align: justify;">Authors thank members of the <a href="https://svivek.com/">Utah NLP group</a>
 			for their valuable insights and suggestions at various stages of the project; and <a
 				href="https://www.aacl2022.org/home">AACL-IJCNLP 2022</a> reviewers
-			for their helpful comments. <a href="https://vgupta123.github.io/">Vivek Gupta</a> acknowledges support from
+			for their helpful comments. Additionally, we appreciate the inputs provided by <a
+				href="https://svivek.com/">Vivek Srikumar</a> and <a href="http://www.cs.utah.edu/~riloff/">Ellen
+				Riloff</a>.
+			<a href="https://vgupta123.github.io/">Vivek Gupta</a> acknowledges support from
 			<a
 				href="https://www.bloomberg.com/company/values/tech-at-bloomberg/data-science/academic-engagement-programs/data-science-ph-d-fellowship/">Bloomberg's
 				Data Science Ph.D. Fellowship</a>.
