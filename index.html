@@ -14,13 +14,13 @@
 <body>
 	<section class="page-header">
 		<h1><img src="figures/logo.png" style="max-width:50%;"></h1>
-		<!-- <a href="https://github.com/abhilashreddys/infoADAPET" class="btn">Paper</a> -->
+		<a href="https://vgupta123.github.io/docs/pettable.pdf" class="btn">Paper</a>
 		<a href="https://github.com/abhilashreddys/infoADAPET" class="btn">Code</a>
-		<a href="https://github.com/utahnlp/knowledge_infotabs" class="btn">Knowledge InfoTabS</a>
-		<a href="https://infotabs.github.io/" class="btn">InfoTabS</a>
 		<!-- <a href="https://screencast-o-matic.com/watch/crhlnpVfYcG" class="btn">Video</a> -->
 		<!-- <a href="https://vgupta123.github.io/docs/NAACL_2021_Poster.pdf" class="btn">Poster</a> -->
 		<!-- <a href="https://docs.google.com/presentation/d/1MfkHFcfnoCiBY9ftp8Uw_uosz_Xo5UQNkZEwJZ-HS10/edit?usp=sharing" class="btn">PPT</a> -->
+		<a href="https://github.com/utahnlp/knowledge_infotabs" class="btn">Knowledge InfoTabS</a>
+		<a href="https://infotabs.github.io/" class="btn">InfoTabS</a>
 	</section>
 	<section class="main-content">
 		<h1>Enhancing Tabular Reasoning with Pattern Exploiting Training</h1>
@@ -48,16 +48,10 @@
 			i.e. tabular natural language inference. Below is an example from the <a href="infotabs.github.io">INFOTABS
 			</a>dataset:</p>
 		<p style="margin-left:10%; margin-right:10%;"><img src="figures/ex_main_v2.png" style="max-width:95%;"></p>
-		<p> Here, <b>H1</b> is <span style="color: darkgreen">entailed</span>, <b>H2</b> is <span
-				style="color: red">contradiction</span> and <b>H3</b> is <span style="color: blue">neutral</span></p>
+		<p> Here, <b>H1</b> is <span style="color: darkgreen">entailed</span>, <b>H2</b> is <span style="color: blue">neutral</span> and <b>H3</b> is <span style="color: red">contradiction</span> </p>
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Motivation</h2>
-		<!--<p style="text-align: justify;"><ul>
-				<li>Recent work mostly focuses on <b>building</b> sophisticated <b>neural models</b></li>
-				<li>How will models designed for <b>raw text adapt for tabular data</b>?</li>
-				<li>How to <b>represent data</b> and <b>incorporate knowledge</b> into the model?
-                <li>Can better <b>pre-processing</b> of <b>tabular information</b> enhance table comprehension?
-			</ul></p>-->
+
 		<p style="text-align: justify;"> Recent work mostly focuses on <b>building</b> sophisticated <b>neural
 				models</b>. We study the following questions in regards to the tabular reasoning problem.
 				<ul>
@@ -66,17 +60,16 @@
 				</ul>
 			</ul>
 		</p>
-		<!-- <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
-					class="octicon octicon-link"></span></a>Key Challenges</h2>
-		<p style="text-align: justify;"> The following are the key challenges encountered while working on any tabular
-			reasoning problem:
+		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
+					class="octicon octicon-link"></span></a>Our Contributions</h2>
+		<p style="text-align: justify;"> The following are the our key contributions in this work:
 		<ul>
-			<li>Poor Table Representation</li>
-			<li>Missing Lexical Knowledge</li>
-			<li>Presence of Distracting Information
-			<li>Missing Domain Knowledge
+			<li>Created prompts to determine if existing models can infer from knowledge.</li>
+			<li>Leveraged ADAPET to strengthen model reasoning via extracting knowledge from tables.</li>
+			<li>Our method retains knowledge whilst boosting performance on downstream NLI task.</li>
+			<li>These findings are further supported by results obtained on numerous adversarial test sets.</li>
 		</ul>
-		</p> -->
+		</p>
 		<!-- <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a><span>&#9672;</span> Evaluation of Pre-training Knowledge</h2>
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
@@ -213,10 +206,8 @@
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Acknowledgement</h2>
 		<p style="text-align: justify;">Authors thank members of the <a href="https://svivek.com/">Utah NLP group</a>
-			for their valuable insights and
-			suggestions at various stages of the project; and <a href="https://www.aacl2022.org/home">AACL-IJCNLP 2022</a> reviewers
-			for their helpful comments. We also thank the support of NSF Grants No. 1801446 and 1822877, and a generous
-			gift from Verisk Inc.</p>
+			for their valuable insights and suggestions at various stages of the project; and <a href="https://www.aacl2022.org/home">AACL-IJCNLP 2022</a> reviewers
+			for their helpful comments. <a href="https://vgupta123.github.io/">Vivek Gupta</a> acknowledges support from <a href="https://www.bloomberg.com/company/values/tech-at-bloomberg/data-science/academic-engagement-programs/data-science-ph-d-fellowship/">Bloomberg's Data Science Ph.D. Fellowship</a>.</p>
 		<footer class="site-footer">
 			<span class="site-footer-owner"><a href="https://infoadapet.github.io/">Enhancing Tabular Reasoning with Pattern Exploiting Training</a> is
 				maintained by <a href="https://www.linkedin.com/in/abhilashreddys/">Abhilash</a>.</span>
