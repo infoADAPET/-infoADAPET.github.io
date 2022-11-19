@@ -47,7 +47,7 @@
 				style="color: red">contradiction</span>), or undetermined (<span style="color: blue">neutral</span>,
 			i.e. tabular natural language inference. Below is an example from the <a href="infotabs.github.io">INFOTABS
 			</a>dataset:</p>
-		<p style="margin-left:10%; margin-right:10%;"><img src="figures/ex_main_v2.png" style="max-width:95%;"></p>
+		<p style="margin-left:10%; margin-right:10%;"><img src="figures/ex_main_v2.png" style="max-width:95%;" class="center"></p>
 		<p> Here, <b>H1</b> is <span style="color: darkgreen">entailed</span>, <b>H2</b> is <span
 				style="color: blue">neutral</span> and <b>H3</b> is <span style="color: red">contradiction</span> </p>
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
@@ -117,30 +117,34 @@
 		<p style="text-align: justify;"><i>"What is the most suitable label
 				given the input?"</i> i.e., The model is tasked with
 			predicting the masked vocabulary word.</p>
-		<img src="figures/ADAPET DLL.png" style="object-fit:contains;max-width:70%;">
+			<figure> <img src="figures/ADAPET DLL.png" style="object-fit:contains;max-width:70%;" class="center"></figure>
 
 		<h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Label Conditioning</h3>
 		<p style="text-align: justify;"><i>"Given the correct inference label, what is the appropriate, relevant
 				context?"</i> i.e., Predicting the randomly-mask token from vocabulary given its label.</p>
-		<img src="figures/ADAPET LC.png" style="object-fit:contains;max-width:70%;">
+		<figure<img src="figures/ADAPET LC.png" style="object-fit:contains;max-width:70%;" class="center"></figure>
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a><span>&#9672;</span> Robustness To Perturbations
 		</h2>
 		<p style="text-align: justify;">We employ a variety of character and word-level perturbations to hypotheses to
 			mimic inputs that differ somewhat from training examples distributions.</p>
-		<figure><img src="figures/perturb_examples.png" style="object-fit:contains;max-width:95%;"></figure>
+		<img src="figures/perturb_examples.png" style="object-fit:contains;max-width:95%;"></figure>
 		
 
-
-
-		<!-- <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
+		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Experimental Results</h2>
-		<p style="text-align: justify; display:inline;">We observe significant improvements in adversarial
+		<!-- <p style="text-align: justify; display:inline;">We observe significant improvements in adversarial
 			<span>&#593;</span><sub>2</sub> and <span>&#593;</span><sub>3</sub> datasets. Further, ablation study
-			indicates all changes are needed, knowledge addition being the most important. <img src="figures/result.png"
-				style="max-width:95%;"></p> -->
+			indicates all changes are needed, knowledge addition being the most important. 
+			<img src="figures/result.png" style="max-width:95%;"></p> -->
+		<figure>
+			<img src="figures/Factual Knowledge Evaluation.png" style="object-fit:contains;max-width:95%;" class="center">
+			<img src="figures/Relational Knowledge Evaluation.png" style="object-fit:contains;max-width:95%;" class="center">
+			<img src="figures/Reasoning on InfoTabS DRR8.png" style="object-fit:contains;max-width:95%;" class="center">
+			<img src="figures/Robustness to Input perturbations_v2.png" style="object-fit:contains;max-width:95%;" class="center">
+		</figure>
 
 		<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
 					class="octicon octicon-link"></span></a>Conclusion</h2>
